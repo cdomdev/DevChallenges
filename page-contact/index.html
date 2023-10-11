@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="any">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img class="logo" src="images/logo.svg" alt="Main Logo">
+        </header>
+        <h1>Interested in our <br> business pricing?</h1>
+        <h3>Fill out the form to view details, and we'll <br>contact you as soon as possible.</h3>
+        <div class="container">
+            <div class="contenedor-body-input">
+                <div class="cont-inpt">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Ethan Johnson">
+                    <label for="company">Company Size</label>
+                    <select id="company">
+                        <option value="company1">50-100 employees</option>
+                        <option value="company2">100-120 employees</option>
+                        <option value="company3">120+ employees</option>
+                    </select>
+                </div>
+                <div class="cont-inpt">
+                    <label for="email">Company Email</label>
+                    <input type="email" id="email" placeholder="ethan@Johnson.com">
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option value="subject1">Building Landing Pages</option>
+                        <option value="subject2">Product Inquiry</option>
+                        <option value="subject3">Custom Solutions</option>
+                    </select>
+                </div>
+            </div>
+            <div class="cont-textarea">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" cols="40"></textarea>
+            </div>
+            <button class="btn-contact" onclick="enviarInformacion()" id="openModal">Contact Sales</button>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <p id="text-name"></p>
+                <p id="text"> Gracias por enviarnos un mensaje, pronto nos pondremos en contancto con usted.</p>
+            </div>
+        </div>
+        <footer>
+            <a href="https://github.com/">Cdom@dev</a>
+        </footer>
+    </main>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

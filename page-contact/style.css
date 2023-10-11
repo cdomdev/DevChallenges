@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap");
+
+body {
+  display: flex;
+  text-align: center;
+  background: rgb(183, 70, 112);
+  background: linear-gradient(
+    166deg,
+    rgba(183, 70, 112, 1) 3%,
+    rgba(89, 36, 166, 1) 64%,
+    rgba(58, 73, 192, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  font-family: 'Sora', sans-serif;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+header {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el contenido del encabezado */
+  padding: 10px;
+}
+
+
+.cont-logo {
+  margin-right: 20px; /* Ajusta el margen derecho para el logotipo */
+  align-self: flex-start; /* Alinea el logotipo a la izquierda */
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(5, 5, 5);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: left;
+}
+.contenedor-body-input{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+}
+.cont-inpt {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+
+}
+.cont-inpt input, select{
+  border-radius: 10px ;
+  padding: 15px 0;
+  border: transparent;
+  margin-bottom: 1rem;padding-left: 10px;
+  font-weight: bold;
+}
+input:focus , select:focus{
+    color: #333; 
+    outline: none;
+}
+
+input::placeholder{
+  padding-left: 10px;
+}
+select::placeholder{
+ padding-left:10px;
+}
+label{
+  color: white;
+  padding-left: 5px;
+}
+.cont-textarea {
+  margin: auto;
+}
+#message {
+  width: 600px;
+  height: 200px;
+  resize: none;
+  border-radius: 10px;
+}
+#message:focus{
+    color: #333; 
+    outline: none;
+}
+.btn-contact {
+  color: #443baa;
+  padding: 18px 0;
+  border: none;
+  border-radius: 15px;
+  margin-top: 2rem;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+footer a{
+  color: black;
+  font-size: 5px;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  max-width: 400px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#text{
+  color: black;
+}
+#text-name{
+  color: black;
+}
+#openModal:hover {
+  opacity: 80%;
+}
+
+@media (max-width: 768px) {
+  body {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centra el contenido verticalmente */
+      text-align: center;
+      padding: 1rem;
+  }
+  
+  .container {
+      max-width: 80%;
+      margin:auto; /* Cambia el ancho máximo del contenedor */
+  }
+  .contenedor-body-input{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cont-inpt {
+      flex-direction: column;
+      width: 100%; /* Cambia el diseño para apilar los elementos verticalmente */
+  }
+
+  input, select {
+      width: 100%; /* Los input y select ocuparán el 100% del ancho */
+  }
+
+  #message {
+      width:100%; /* El campo de mensaje ocupa el 100% del ancho */
+  }
+
+}
+
+/* Media query para pantallas medianas, por ejemplo, cuando el ancho de la pantalla está entre 769px y 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container {
+      width: 100%; 
+  }
+  #message{
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+}
