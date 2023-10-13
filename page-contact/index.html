@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,33 +10,44 @@
 </head>
 
 <body>
+    <header>
+        <div class="contenedor-logo">
+            <img class="logo" src="images/logo.png" alt="Main Logo">
+            <span class="text-logo">Becv</span>
+        </div>
+    </header>
     <main>
-        <header>
-            <img class="logo" src="images/logo.svg" alt="Main Logo">
-        </header>
         <h1>Interested in our <br> business pricing?</h1>
         <h3>Fill out the form to view details, and we'll <br>contact you as soon as possible.</h3>
         <div class="container">
             <div class="contenedor-body-input">
                 <div class="cont-inpt">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Ethan Johnson">
-                    <label for="company">Company Size</label>
-                    <select id="company">
-                        <option value="company1">50-100 employees</option>
-                        <option value="company2">100-120 employees</option>
-                        <option value="company3">120+ employees</option>
-                    </select>
+                    <div class="dates-cont">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Ethan Johnson">
+                    </div>
+                    <div class="dates-cont">
+                        <label for="email">Company Email</label>
+                        <input type="email" id="email" placeholder="ethan@Johnson.com">
+                    </div>
                 </div>
                 <div class="cont-inpt">
-                    <label for="email">Company Email</label>
-                    <input type="email" id="email" placeholder="ethan@Johnson.com">
-                    <label for="subject">Subject</label>
-                    <select id="subject">
-                        <option value="subject1">Building Landing Pages</option>
-                        <option value="subject2">Product Inquiry</option>
-                        <option value="subject3">Custom Solutions</option>
-                    </select>
+                    <div class="dates-cont">
+                        <label for="company">Company Size</label>
+                        <select id="company">
+                            <option value="company1">50-100 employees</option>
+                            <option value="company2">100-120 employees</option>
+                            <option value="company3">120+ employees</option>
+                        </select>
+                    </div>
+                    <div class="dates-cont">
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option value="subject1">Building Landing Pages</option>
+                            <option value="subject2">Product Inquiry</option>
+                            <option value="subject3">Custom Solutions</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="cont-textarea">
